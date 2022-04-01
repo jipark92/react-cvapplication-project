@@ -1,6 +1,6 @@
 import React from "react";
 import MainContent1 from './components/MainContent1'
-import MainContent2 from './components/MainContent2'
+import MainContent2 from './components/content2/MainContent2'
 
 
 export default function App() {
