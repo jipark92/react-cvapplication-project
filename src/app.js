@@ -6,7 +6,6 @@ import WorkExperienceInputs from "./components/inputforms/WorkExperienceInputs";
 import Education from "./components/Education";
 import EducationInput from "./components/inputforms/EducationInputs";
 
-
 export default function App() {
     const [fullDetails, setfullDetails] = React.useState({
         name: "John Doe",
@@ -37,7 +36,6 @@ export default function App() {
 
     return(
         <div className="main-container">
-
             <div className="text-inputs">
                 <PersonalDetailInputs 
                     nameInput={fullDetails.name}
@@ -48,7 +46,6 @@ export default function App() {
                     aboutMeInput={fullDetails.aboutMe}
                     handleChange={getDetails}
                 />
-
                 <WorkExperienceInputs
                     companyInput={fullDetails.company}
                     positionInput={fullDetails.position}
@@ -57,7 +54,6 @@ export default function App() {
                     aboutWorkInput={fullDetails.aboutWork}
                     handleChange={getDetails}
                 />
-
                 <EducationInput
                     courseInput={fullDetails.course}
                     universityInput={fullDetails.university}
@@ -67,7 +63,6 @@ export default function App() {
                     handleChange={getDetails}
                 />
             </div>
-
             <div className="text-outputs">
                 <PersonalDetails
                     yourFullName={fullDetails.name}
@@ -77,7 +72,6 @@ export default function App() {
                     yourLocation={fullDetails.location}
                     yourAboutMe={fullDetails.aboutMe}
                 />
-
                 <WorkExperience
                     yourCompany={fullDetails.company}
                     yourPosition={fullDetails.position}
@@ -85,7 +79,6 @@ export default function App() {
                     yourEndDate={fullDetails.endDate}
                     yourAboutWork={fullDetails.aboutWork}
                 />
-
                 <Education 
                     yourCourse={fullDetails.course}
                     yourUniversity={fullDetails.university}
@@ -93,9 +86,7 @@ export default function App() {
                     yourEndCourse={fullDetails.courseEnd}
                     yourAboutEducation={fullDetails.aboutEducation}
                 />
-
             </div>
-
         </div>
     )
 }

@@ -40,7 +40,8 @@ export default function EducationInput(props) {
                 onChange={props.handleChange}
                 maxLength="10"
             />
-            <textarea rows="5" 
+            <textarea 
+                rows="3" 
                 className="about-education" 
                 type="text" 
                 placeholder="Write About Education" 
@@ -48,6 +49,8 @@ export default function EducationInput(props) {
                 value={props.aboutEducationInput}  
                 onChange={props.handleChange}
             />
+            <button>Add</button>
+            <button>Remove</button>
         </div>
     )
 }

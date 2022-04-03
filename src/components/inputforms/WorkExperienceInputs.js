@@ -40,7 +40,8 @@ export default function WorkExperience(props) {
                         onChange={props.handleChange}
                         maxLength="10"
                     />
-                    <textarea rows="5" 
+                    <textarea 
+                        rows="3" 
                         className="about-work" 
                         type="text" 
                         placeholder="Write About Work" 
@@ -48,6 +49,8 @@ export default function WorkExperience(props) {
                         value={props.aboutWorkInput}  
                         onChange={props.handleChange}
                     />
+                    <button>Add</button>
+                    <button>Remove</button>
                 </div> 
     )
 }

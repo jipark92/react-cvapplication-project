@@ -49,7 +49,8 @@ export default function PersonalDetailInputs(props) {
                         onChange={props.handleChange}
                         maxLength="24"
                     />
-                    <textarea rows="5" 
+                    <textarea 
+                        rows="5" 
                         className="about-me" 
                         type="text" 
                         placeholder="Write about yourself" 

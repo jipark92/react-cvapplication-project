@@ -4,9 +4,8 @@ export default function Education(props) {
     return (
         <div className="education-container">
             <h3>Education</h3>
-
             <div className="university-container">
-                <div >
+                <div>
                     <p>Course: {props.yourCourse}</p>
                 </div>
                 <div className="university-detail">
@@ -15,7 +14,6 @@ export default function Education(props) {
                     <p>End: {props.yourEndCourse}</p>           
                 </div>
             </div>
-
             <div className="about-education">
                 {props.yourAboutEducation}
             </div>
