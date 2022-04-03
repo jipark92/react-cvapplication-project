@@ -12,51 +12,103 @@
   padding: 1rem;
   gap: 1rem;
 }
-
+/* container 1 */
 .text-inputs {
   border: 3px solid darkred;
   width: 50%;
-  padding: 1rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
+.personal-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 0.8rem;
+}
+
+/* container 2 */
 .text-outputs {
   border: 3px solid darkblue;
   width: 50%;
   padding: 1rem;
 }
 
-.personal-name {
+/* inputs */
+
+input {
   border: 1px solid black;
-  height: 1rem;
-  padding: 0.5rem;
+  height: 1.5rem;
+  padding: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.personal-name {
+
 }
 
 /* heading template */
 .template-heading {
-  border: 1px solid black;
   display: flex;
   justify-content: space-between;
 }
 
 
 .fullname-jobtitle {
-  border: 1px solid black;
 }
 
 .fullname {
-  border: 1px solid black;
   height: 50px;
 }
 
-.job-title{ 
-  border: 1px solid black;
-  height: 50px;
-}
+
 
 .phone-email-location {
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-end;
+}
+.phone-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+
+.email-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.location-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+img{
+  height: 25px;
+  width: 25px;
+}
+
+textarea{
+  resize: none;
+  border: 1px solid black;
+  padding: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.seperator {
+  width: 100%;
+  border-bottom: 3px solid darkblue;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  
+  
 }
