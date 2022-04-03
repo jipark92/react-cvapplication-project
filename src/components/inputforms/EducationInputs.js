@@ -49,8 +49,8 @@ export default function EducationInput(props) {
                 value={props.aboutEducationInput}  
                 onChange={props.handleChange}
             />
-            <button>Add</button>
-            <button>Remove</button>
+            {/* <button>Add</button>
+            <button>Remove</button> */}
         </div>
     )
 }

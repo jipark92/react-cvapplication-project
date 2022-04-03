@@ -49,8 +49,8 @@ export default function WorkExperience(props) {
                         value={props.aboutWorkInput}  
                         onChange={props.handleChange}
                     />
-                    <button>Add</button>
-                    <button>Remove</button>
+                    {/* <button>Add</button>
+                    <button>Remove</button> */}
                 </div> 
     )
 }
