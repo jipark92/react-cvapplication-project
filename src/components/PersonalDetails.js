@@ -1,14 +1,8 @@
 import React from "react";
 
-
-
-
 export default function PersonalDetails(props) {
-
-    
-
     return (
-        <div className="text-outputs">
+        <div>
             <div className="template-heading">
                 <div className="fullname-jobtitle">
                     <div className="fullname">
@@ -18,7 +12,6 @@ export default function PersonalDetails(props) {
                         <h3>{props.yourJob}</h3>
                     </div>
                 </div>
-
                 <div className="phone-email-location">
                     <div className="phone-container">
                         <p>{props.yourNumber}</p>
@@ -34,9 +27,7 @@ export default function PersonalDetails(props) {
                     </div>
                 </div>
             </div>
-
             <div className="seperator"></div>
-
             <div className="aboutme-container">
                 <p>{props.yourAboutMe}</p>
             </div>

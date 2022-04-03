@@ -22,35 +22,43 @@
   gap: 1rem;
 }
 
+.text-inputs h3 {
+  color: darkred;
+}
+
 .personal-details {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   gap: 0.8rem;
-  border: 1px solid black;
 }
 
-.work-container {
+.work-input {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   gap: 0.8rem;
-  border: 1px solid black;
 }
 
-.education-container {
+.education-input {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   gap: 0.8rem;
-  border: 1px solid black;
 }
 
 /* container 2 */
 .text-outputs {
   border: 3px solid darkblue;
   width: 50%;
-  padding: 1rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 12rem;
+}
+
+.text-outputs h3 {
+  color: darkblue;
 }
 
 /* inputs */
@@ -109,6 +117,40 @@ input {
   align-items: center;
   gap: 0.5rem;
 }
+
+
+.work-experience {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1em;
+}
+
+.company-container{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.education-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1em;
+}
+
+.university-container{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.university-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
 
 img{
   height: 25px;

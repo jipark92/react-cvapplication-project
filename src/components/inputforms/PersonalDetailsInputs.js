@@ -13,7 +13,6 @@ export default function PersonalDetailInputs(props) {
                         onChange={props.handleChange}
                         maxLength="12"
                     />
-
                     <input
                         className="job-title" 
                         type="text" 
@@ -23,7 +22,6 @@ export default function PersonalDetailInputs(props) {
                         onChange={props.handleChange}
                         maxLength="24"
                     />
-
                     <input
                         className="phone" 
                         type="text" 
@@ -33,7 +31,6 @@ export default function PersonalDetailInputs(props) {
                         onChange={props.handleChange}
                         maxLength="12"
                     />
-
                     <input
                         className="email" 
                         type="email" 
@@ -43,7 +40,6 @@ export default function PersonalDetailInputs(props) {
                         onChange={props.handleChange}
                         maxLength="24"
                     />
-
                     <input
                         className="location" 
                         type="text" 
@@ -53,7 +49,6 @@ export default function PersonalDetailInputs(props) {
                         onChange={props.handleChange}
                         maxLength="24"
                     />
-
                     <textarea rows="5" 
                         className="about-me" 
                         type="text" 

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function EducationInput(props) {
     return (
-        <div className="education-container">
+        <div className="education-input">
             <h3>Education</h3>
             <input
                 className="course-program"
@@ -13,7 +13,6 @@ export default function EducationInput(props) {
                 onChange={props.handleChange}
                 maxLength="16"
             />
-
             <input
                 className="university"
                 type="text"
@@ -23,7 +22,6 @@ export default function EducationInput(props) {
                 onChange={props.handleChange}
                 maxLength="16"
             />
-
             <input
                 className="course-start"
                 type="text"
@@ -31,9 +29,8 @@ export default function EducationInput(props) {
                 name="courseStart"
                 value={props.courseStartInput}  
                 onChange={props.handleChange}
-                maxLength="16"
+                maxLength="10"
             />
-
             <input
                 className="course-end"
                 type="text"
@@ -41,16 +38,15 @@ export default function EducationInput(props) {
                 name="courseEnd"
                 value={props.courseEndInput}  
                 onChange={props.handleChange}
-                maxLength="16"
+                maxLength="10"
             />
-
             <textarea rows="5" 
                 className="about-education" 
                 type="text" 
                 placeholder="Write About Education" 
                 name="aboutEducation"
                 value={props.aboutEducationInput}  
-                onChange={props.getDetails}
+                onChange={props.handleChange}
             />
         </div>
     )

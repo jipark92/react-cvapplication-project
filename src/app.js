@@ -1,8 +1,10 @@
 import React from "react";
 import PersonalDetails from "./components/PersonalDetails";
-import PersonalDetailInputs from "./components/PersonalDetailsInputs";
-import WorkExperienceInputs from "./components/WorkExperienceInputs";
-import EducationInput from "./components/EducationInputs";
+import PersonalDetailInputs from "./components/inputforms/PersonalDetailsInputs";
+import WorkExperience from "./components/WorkExperience";
+import WorkExperienceInputs from "./components/inputforms/WorkExperienceInputs";
+import Education from "./components/Education";
+import EducationInput from "./components/inputforms/EducationInputs";
 
 
 export default function App() {
@@ -14,15 +16,15 @@ export default function App() {
         location: "city, state",
         aboutMe: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam quas, tenetur provident ut voluptas odio nesciunt sed et ipsam deserunt totam laborum, dolorum dolor veritatis tempore harum magni possimus nulla. Magnam placeat sit non rem fuga animi id repudiandae quidem?",
         company: "Google",
-        position:"",
-        startDate: "",
-        endDate:"",
-        aboutWork: "",
-        course:"",
-        university:"",
-        courseStart:"",
-        courseEnd:"",
-        aboutEducation:""
+        position:"Junior Dev",
+        startDate: "01/01/2022",
+        endDate:"12/12/2022",
+        aboutWork: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, sint in? Sit, at labore animi in ipsam corporis omnis! Dignissimos?",
+        course:"JavaScript",
+        university:"John University",
+        courseStart:"01/01/2022",
+        courseEnd:"12/12/2022",
+        aboutEducation:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, sint in? Sit, at labore animi in ipsam corporis omnis! Dignissimos?"
     })
 
     function getDetails(e) {
@@ -39,7 +41,7 @@ export default function App() {
             <div className="text-inputs">
                 <PersonalDetailInputs 
                     nameInput={fullDetails.name}
-                    jobInput={fullDetails.job}
+                    jobInput={fullDetails.jobTitle}
                     phoneInput={fullDetails.phone}
                     emailInput={fullDetails.email}
                     locationInput={fullDetails.location}
@@ -75,6 +77,23 @@ export default function App() {
                     yourLocation={fullDetails.location}
                     yourAboutMe={fullDetails.aboutMe}
                 />
+
+                <WorkExperience
+                    yourCompany={fullDetails.company}
+                    yourPosition={fullDetails.position}
+                    yourStartDate={fullDetails.startDate}
+                    yourEndDate={fullDetails.endDate}
+                    yourAboutWork={fullDetails.aboutWork}
+                />
+
+                <Education 
+                    yourCourse={fullDetails.course}
+                    yourUniversity={fullDetails.university}
+                    yourStartCourse={fullDetails.courseStart}
+                    yourEndCourse={fullDetails.courseEnd}
+                    yourAboutEducation={fullDetails.aboutEducation}
+                />
+
             </div>
 
         </div>
